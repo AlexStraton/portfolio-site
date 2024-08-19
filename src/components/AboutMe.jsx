@@ -1,3 +1,3 @@
 export default function AboutMe() {
-  return <h1 className='mt-60 text-2xl'>About me</h1>;
+  return <h1 >About me</h1>;
 }
