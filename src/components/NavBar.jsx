@@ -3,19 +3,24 @@ import { Link } from 'react-router-dom'
 import { useNavigate } from "react-router-dom";
 
 export default function NavBar() {
-  const navigate = useNavigate();
   const [open, setOpen] = React.useState(false);
+  const navigate = useNavigate()
 
+const handleClick = () => {
+  navigate("/About")
+}
   return (
     <>
-    <nav className="mt-8 flex items-center justify-between">
-         <img className="left-8 fixed h-auto max-w-1/8" src="src/assets/AlexLightMode.png"></img>
-    <div className='right-0 fixed hidden sm:flex ml-auto mr-6 winky-rough-font'>
-          <Link to="/About" className="text-black-300 font-thin hover:text-green-600 hover:text-3xl  hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 py-2 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">About</Link>
-          <Link to="/Projects" className="text-black-300 font-thin hover:text-green-600 hover:text-3xl hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 py-2 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">Projects</Link>
-        <Link to="/CV" className="text-black-300 font-thin hover:text-green-600 hover:text-3xl hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 py-2 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">CV</Link>
-        <Link to="/TechStack" className="text-black-300 font-thin hover:text-green-600 hover:text-3xl hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 py-2 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">Tech Stack</Link>
-          <Link to="/Contact" className="text-black-300 font-thin hover:text-green-600 hover:text-3xl hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 py-2 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">Contact</Link>
+    <nav className="bg-gray-100 fixed w-full top-0 left-0 flex items-center justify-between">
+         <button>
+         <img onClick={handleClick} className="ml-8 h-20 cursor-pointer" src="src/assets/AlexLightMode.png"></img>
+         </button>
+    <div className='right-0 hidden sm:flex '>
+          <Link to="/About" className="cursor-pointer text-black-300 font-thin hover:text-green-600 hover:text-3xl  hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">About</Link>
+          <Link to="/Projects" className="cursor-pointer text-black-300 font-thin hover:text-green-600 hover:text-3xl hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">Projects</Link>
+        <Link to="/CV" className="cursor-pointer text-black-300 font-thin hover:text-green-600 hover:text-3xl hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">CV</Link>
+        <Link to="/TechStack" className="cursor-pointer text-black-300 font-thin hover:text-green-600 hover:text-3xl hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">Tech Stack</Link>
+          <Link to="/Contact" className="cursor-pointer text-black-300 font-thin hover:text-green-600 hover:text-3xl hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">Contact</Link>
         </div>
       <button
         className="block sm:hidden right-0 fixed p-2 mr-8 rounded border border-gray-300 bg-white shadow hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400"
@@ -58,7 +63,7 @@ export default function NavBar() {
         <ul className="flex flex-col gap-2 px-6 py-6">
           <li>
             <button
-              className="bg-red-100 w-full text-left py-2 px-3 rounded hover:bg-blue-50 font-semibold text-gray-800"
+              className="cursor-pointer bg-red-100 w-full text-left py-2 px-3 rounded hover:bg-blue-50 font-semibold text-gray-800"
               onClick={() => {
                 navigate("/Projects");
                 setOpen(false);
@@ -69,7 +74,7 @@ export default function NavBar() {
           </li>
           <li>
             <button
-              className=" bg-green-100 w-full text-left py-2 px-3 rounded hover:bg-blue-50 text-gray-800"
+              className="cursor-pointer bg-green-100 w-full text-left py-2 px-3 rounded hover:bg-blue-50 text-gray-800"
               onClick={() => {
                 navigate("/About");
                 setOpen(false);
@@ -80,7 +85,7 @@ export default function NavBar() {
           </li>
           <li>
             <button
-              className="bg-yellow-100 w-full text-left py-2 px-3 rounded hover:bg-blue-50 text-gray-800"
+              className="cursor-pointer bg-yellow-100 w-full text-left py-2 px-3 rounded hover:bg-blue-50 text-gray-800"
               onClick={() => {
                 navigate("/CV");
                 setOpen(false);
@@ -91,7 +96,7 @@ export default function NavBar() {
           </li>
            <li>
             <button
-              className="bg-purple-100 w-full text-left py-2 px-3 rounded hover:bg-blue-50 text-gray-800"
+              className="cursor-pointer bg-purple-100 w-full text-left py-2 px-3 rounded hover:bg-blue-50 text-gray-800"
               onClick={() => {
                 navigate("/TechStack");
                 setOpen(false);
@@ -102,7 +107,7 @@ export default function NavBar() {
           </li>
           <li>
             <button
-              className="bg-purple-100 w-full text-left py-2 px-3 rounded hover:bg-blue-50 text-gray-800"
+              className="cursor-pointer bg-purple-100 w-full text-left py-2 px-3 rounded hover:bg-blue-50 text-gray-800"
               onClick={() => {
                 navigate("/Contact");
                 setOpen(false);

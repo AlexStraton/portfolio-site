@@ -1,11 +1,11 @@
 import "./App.css";
-import AboutMe from "./components/AboutMe";
+import AboutMe from "./pages/AboutMe";
 
-import Projects from "./components/Projects";
+import Projects from "./pages/Projects";
 import NavBar from "./components/NavBar";
-import Contact from "./components/Contact";
-import CV from "./components/CV";
-import TechStack from "./components/TechStack";
+import Contact from "./pages/Contact";
+import CV from "./pages/CV";
+import TechStack from "./pages/TechStack";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
