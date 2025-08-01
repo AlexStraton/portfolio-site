@@ -1,12 +1,12 @@
 import { FaGithub } from "react-icons/fa";
-
+import Footer from "../components/Footer";
 
 export default function Projects() {
 
 
   return <>
   <section>
-  <h1 className="mt-24 text-blue-800 text-6xl p-8 font-extralight">Projects</h1>
+  <h1 className="mt-24 text-black text-6xl p-8 font-extralight">Projects</h1>
   <div className="border-4 border-orange-300 m-12 md:m-24 lg:m-32 rounded-xl ">
     <h1 className="text-orange-600 md:text-3xl lg:text-4xl text-2xl font-extralight p-2">Travel app</h1>
     <h2 className="text-orange-800 md:text-xl lg:text-2xl text-lg text-right m-4">NextJs | React | Vercel | PSQL | Tailwind</h2>
@@ -114,5 +114,6 @@ export default function Projects() {
 
   </div>
   </section>
+  <Footer />
 </>
 }
