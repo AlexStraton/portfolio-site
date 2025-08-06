@@ -10,7 +10,7 @@ export default function CV() {
 
   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
     <div className="md:col-span-2 col-span-1 flex flex-col space-y-4 p-6">
-  <section className="bg-gray-200 border-2 border-gray-300 rounded-xl p-6">
+  <section className="bg-gray-200 border-2 border-green-500 rounded-xl p-6">
 <h1 className="m-4 font-semibold text-2xl">
   Software Engineer - Curaleaf International
   </h1>
@@ -44,10 +44,9 @@ Aug 2023 - Current
  <div className="bg-gray-200 border-2 border-gray-300 rounded-xl p-2 flex-1">
       <h2 className="font-semibold text-2xl mb-4">Certificates</h2>
   <div className="flex flex-col space-y-2 overflow-auto p-2">
-  <img alt="Northcoders ertificate of participation" className="w-full max-w-[200px] self-center object-contain h-auto" src="src/assets/NC-Alex-Straton-certificate-1.png"/>
-   <img alt="" className="w-full max-w-[200px] self-center object-contain h-auto" src="src/assets/FreeCodeCamp.png"/>
-     <img alt="" className="w-full max-w-[200px] self-center object-contain h-auto" src="src/assets/JavascriptCert.jpg"/>
-       <img alt="" className="w-full max-w-[200px] self-center object-contain h-auto" src="src/assets/NC-Alex-Straton-certificate-1.png"/>
+  <img alt="Northcoders bootcamp certificate" className="w-full max-w-[200px] self-center object-contain h-auto" src="src/assets/NC-Alex-Straton-certificate-1.png"/>
+   <img alt= "FreeCodeCamp Responsive Web Design certificate" className="w-full max-w-[200px] self-center object-contain h-auto" src="src/assets/FreeCodeCamp.png"/>
+     <img alt="Udemy Complete javaScript Certificate" className="w-full max-w-[200px] self-center object-contain h-auto" src="src/assets/JavascriptCert.jpg"/>
  </div>
   </div>
       </aside>
