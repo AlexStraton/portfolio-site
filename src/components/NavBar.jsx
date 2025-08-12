@@ -11,7 +11,7 @@ const handleClick = () => {
 }
   return (
     <>
-    <nav className="bg-gray-100 fixed w-full top-0 left-0 flex items-center justify-between">
+    <nav className="bg-gray-100 fixed w-full z-50 top-0 left-0 flex items-center justify-between">
          <button>
          <img onClick={handleClick} className="ml-8 h-20 cursor-pointer" src="src/assets/AlexLightMode.png"></img>
          </button>

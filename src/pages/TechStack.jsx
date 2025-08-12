@@ -4,6 +4,7 @@ import Testing from "../components/Testing";
 import Other from "../components/Other";
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
+import Footer from "../components/Footer";
 
 export default function TechStack() {
   const images = [
@@ -36,11 +37,19 @@ export default function TechStack() {
   };
 
   return <>
-  <h1 className="mt-24">Tech Stack</h1>
+   <main className="min-h-screen flex flex-col">
+  <section className="mt-24 flex-grow">
+  <h1 className="text-black text-6xl mx-auto p-8 font-extralight">Tech Stack</h1>
+<div className="relative z-10">
   <ImageGallery
   items={images}
   renderItem={renderItem}
   renderThumbInner={renderThumbInner}
   showFullscreenButton={false}/>
+  </div>
+  </section>
+  </main>
+  <Footer />
   </>
+
 }
