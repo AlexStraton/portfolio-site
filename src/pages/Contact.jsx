@@ -3,7 +3,10 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import ContactForm from "../components/ContactForm";
 
+
+
 export default function Contact() {
+   
   return ( <>
   <main className="min-h-screen flex flex-col bg-gray-300">
   <section className="mt-24 flex-grow">

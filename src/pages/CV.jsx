@@ -1,7 +1,29 @@
 import { FaFileDownload } from "react-icons/fa";
 import Footer from "../components/Footer";
+import { useContext } from "react";
+import { LangThemeContext } from "../LangThemeContext";
+
+
+const translations = {
+  en: {
+    title: "Junior Software Developer",
+    about: `A linguist with a background in primary education, I am now a junior full-stack developer specializing in Python, TypeScript, React, and PostgreSQL with a strong focus on problem solving and a flare for design and styling.
+
+I am currently in my first junior role developing and integrating the company's internal systems, as well as adding new features and working with UX/UI designers to implement user interface components and features that improve the user experience.`,
+  },
+  sp: {
+
+    title: "Desarrolladora de Software Junior",
+    about: `Lingüista con experiencia en educación primaria, ahora soy una desarrolladora full-stack junior especializada en Python, TypeScript, React y PostgreSQL, con un fuerte enfoque en la resolución de problemas y un toque para el diseño y el estilo.
+
+Actualmente estoy en mi primer puesto junior desarrollando e integrando los sistemas internos de la empresa, así como añadiendo nuevas funcionalidades y trabajando con diseñadores UX/UI para implementar componentes y características que mejoran la experiencia del usuario.`,
+  }
+};
 
 export default function CV() {
+    const { lang } = useContext(LangThemeContext);
+    const translatedText = translations[lang] || translations.en;
+
   return <>
   <div className="mt-24 flex items-center justify-between w-full">
   <h1 className=" text-black text-6xl mx-auto p-8 font-extralight">CV</h1>
@@ -12,37 +34,37 @@ export default function CV() {
     <div className="md:col-span-2 col-span-1 flex flex-col space-y-4 p-6 lg:p-16">
   <section className="bg-gray-200 border-2 border-green-500 rounded-xl p-6">
 <h1 className="m-4 font-semibold text-2xl">
-  Software Engineer - Curaleaf International
+  {lang === 'en' ? "Software Engineer - Curaleaf International" : "Ingeniera de Software - Curaleaf International"}
   </h1>
   <p className="m-4 text-xl font-medium">
-Aug 2023 - Current
+{lang === 'en' ? "  July 2024 - Current" : "Julio 2024 - Actualidad"}
   </p>
   <div className="text-left font-light text-md md:text-lg lg:text-xl">
-<p>- Full-stack software engineering role working with various tech stacks across multiple applications</p>
-<p>- Working with languages, frameworks and libraries include Typescript, React, Python, Quart , Javascript and Firebase</p>
-<p>- Tasks include updating, maintaining and building of new features to both the staff-facing and patient-facing applications</p>
+<p>{lang === 'en' ? '- Full-stack software engineering role working with various tech stacks across multiple applications' : "Engenieria full stack"}</p>
+<p>{lang === 'en' ? '- Working with languages, frameworks and libraries include Typescript, React, Python, Quart , Javascript and Firebase' : 'Espanol'}</p>
+<p>{lang === 'en' ? "- Tasks include updating, maintaining and building of new features to both the staff-facing and patient-facing applications" : "Espanol"}</p>
   </div>
     </section>
 
     <section className="bg-gray-200 border-2 border-orange-400 rounded-xl p-6">
 <h1 className="mb-4 font-semibold text-2xl">
-  Full Stack Software Engineer Trainee - Northcoders
+  {lang === 'en' ? "Software Developer Trainee- Northcoders Bootcamp" : "Desarrolladora de Software Training- Bootcamp Northcoders"}
   </h1>
   <p className="mb-4 text-xl font-medium">
-Aug 2023 - Current
+{lang === 'en' ? "April 2024 - July 2024" : "Abril 2024 - Julio 2024"}
   </p>
   <div className="text-left font-light text-md md:text-lg lg:text-xl">
-<p>- Accredited Software Development Bootcamp teaching  React, JavaScript fundamentals, PSQL and Express.js</p>
-<p>- Designed and programmed two solo full-stack JS/React project, and a group full-stack Python & React Native project</p>
-<p>-  Experience working with RESTful APIs</p>
-<p>- Worked using TDD first practices</p>
+<p>{lang === 'en' ? "- Accredited Software Development Bootcamp teaching  React, JavaScript fundamentals, PSQL and Express.js" : "Espanol"}</p>
+<p>{lang === 'en' ? "- Accredited Software Development Bootcamp teaching  React, JavaScript fundamentals, PSQL and Express.js- Designed and programmed two solo full-stack JS/React project, and a group full-stack Python & React Native project" : "Espanol"}</p>
+<p>{lang === 'en' ? "-  Experience working with RESTful APIs" : "Espanol"}</p>
+<p>{lang === 'en' ? "- Worked using TDD first practices" : "Espanol"}</p>
   </div>
     </section>
 </div>
 
     <aside className="col-span-1 flex flex-col h-full p-6 lg:p-16">
  <div className="bg-gray-200 border-2 border-purple-400 rounded-xl p-2 flex-1">
-      <h2 className="font-semibold text-2xl mb-4">Certificates</h2>
+      <h2 className="font-semibold text-2xl mb-4">{lang === 'en' ? "Certificates" : "Certificaciones"}</h2>
   <div className="flex flex-col space-y-2 overflow-auto p-2">
   <img alt="Northcoders bootcamp certificate" className="w-full max-w-[200px] self-center object-contain h-auto" src="src/assets/NC-Alex-Straton-certificate-1.png"/>
    <img alt= "FreeCodeCamp Responsive Web Design certificate" className="w-full max-w-[200px] self-center object-contain h-auto" src="src/assets/FreeCodeCamp.png"/>
@@ -55,28 +77,25 @@ Aug 2023 - Current
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center p-6">
 <section >
   <div className="p-8 text-2xl flex flex-col bg-gray-200 border-2 border-blue-500 m-2 md:m-4 lg:m-8 rounded-xl ">
-  <h2 className="text-md md:text-lg lg:text-xl mb-4">Languages Spoken</h2>
+  <h2 className="text-md md:text-lg lg:text-xl mb-4">{lang === 'en' ? "Languages Spoken" : "Idiomas"}</h2>
     <div className="space-y-2 font-light text-base md:text-lg">
-      <p>English - Native</p>
-      <p>Spanish - Native</p>
-      <p>Romanian - Native</p>
-      <p>French - Advanced</p>
-      <p>Portuguese - Advanced</p>
+      <p>{lang === 'en' ? "English - Native" : "Ingles - Nativo"}</p>
+      <p>{lang === 'en' ? "Spanish - Native" : "Castellano - Nativo"}</p>
+    <p>{lang === 'en' ? "Romanian - Native" : "Rumano - Nativo"}</p>
+      <p>{lang === 'en' ? "French - Advanced" : "Frances - Avanzado"}</p>
+      <p>{lang === 'en' ? "Portuguese - Advanced" : "Portugues - Avanzado"}</p>
     </div>
   </div>
 </section>
 
 <aside>
   <div className="p-8 text-2xl flex flex-col bg-gray-200 border-2 border-cyan-400 m-2 md:m-4 lg:m-8 rounded-xl ">
-    Education
+    {lang === 'en' ? "Education" : "Educacion"}
     <span className="m-4 font-light text-base text-md md:text-lg lg:text-xl">
-  Postgraduate Cert. in Education
-(PGCE) with Qualified Teacher
-Status (QTS) 2014-2015
+   {lang === 'en' ? "Postgraduate Cert. in Education(PGCE) with Qualified Teacher Status (QTS) 2014-2015" : "Educacion Postgrado (PGCE) con Titulo de Profesora Certificada (QTS) 2014-2015"}
   </span>
 <span className="m-4 font-light text-base text-md md:text-lg lg:text-xl">
-  Modern Languages (French,
-Spanish and Italian) University of Hull (2005-2009)
+  {lang === 'en' ? "Modern Languages (French, Spanish and Italian) University of Hull (2005-2009)" : "Lenguas Modernas (Frances, Castellano e Italiano) Universidad de Hull (2005-2009)"}
   </span>
 
 

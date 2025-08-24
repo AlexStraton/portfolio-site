@@ -5,8 +5,11 @@ import Other from "../components/Other";
 import "react-image-gallery/styles/css/image-gallery.css";
 import ImageGallery from "react-image-gallery";
 import Footer from "../components/Footer";
+import { useContext } from "react";
+import { LangThemeContext } from "../LangThemeContext";
 
 export default function TechStack() {
+ const { lang } = useContext(LangThemeContext);
   const images = [
     {
       customSlide: <FETechStack />,
@@ -39,7 +42,7 @@ export default function TechStack() {
   return <>
    <main className="min-h-screen flex flex-col">
   <section className="mt-24 flex-grow">
-  <h1 className="text-black text-6xl mx-auto p-8 font-extralight">Tech Stack</h1>
+  <h1 className="text-black text-6xl mx-auto p-8 font-extralight">{lang === 'en' && 'Tech Stack'}{lang === 'sp' && "Technologias"}</h1>
 <div className="relative z-10">
   <ImageGallery
   items={images}

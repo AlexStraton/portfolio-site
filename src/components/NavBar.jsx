@@ -1,26 +1,33 @@
 import React from "react";
 import { Link } from 'react-router-dom'
 import { useNavigate } from "react-router-dom";
+import { useContext } from "react";
+import LightDarkToggle from "./LightDarkToggle";
+import LanguageSelect from "./LanguageSelect";
+import { LangThemeContext } from "../LangThemeContext";
 
 export default function NavBar() {
   const [open, setOpen] = React.useState(false);
   const navigate = useNavigate()
-
+  const { lang } = useContext(LangThemeContext);
 const handleClick = () => {
   navigate("/About")
 }
+
   return (
     <>
     <nav className="bg-gray-100 fixed w-full z-50 top-0 left-0 flex items-center justify-between">
          <button>
          <img onClick={handleClick} className="ml-8 h-20 cursor-pointer" src="src/assets/AlexLightMode.png"></img>
          </button>
-    <div className='right-0 hidden sm:flex '>
-          <Link to="/About" className="cursor-pointer text-black-300 font-thin hover:text-green-600 hover:text-3xl  hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">About</Link>
-          <Link to="/Projects" className="cursor-pointer text-black-300 font-thin hover:text-green-600 hover:text-3xl hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">Projects</Link>
-        <Link to="/CV" className="cursor-pointer text-black-300 font-thin hover:text-green-600 hover:text-3xl hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">CV</Link>
-        <Link to="/TechStack" className="cursor-pointer text-black-300 font-thin hover:text-green-600 hover:text-3xl hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">Tech Stack</Link>
-          <Link to="/Contact" className="cursor-pointer text-black-300 font-thin hover:text-green-600 hover:text-3xl hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">Contact</Link>
+        <LanguageSelect />
+         <LightDarkToggle />
+    <div className='right-0 hidden sm:flex'>
+          <Link to="/About" className="cursor-pointer text-black-300 font-thin hover:text-green-600 hover:text-3xl  hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">{lang === 'en' && 'About'}{lang === 'sp' && 'Sobre Mi'}</Link>
+          <Link to="/Projects" className="cursor-pointer text-black-300 font-thin hover:text-green-600 hover:text-3xl hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">{lang === 'en' && 'Projects'}{lang === 'sp' && 'Proyectos'}</Link>
+        <Link to="/CV" className="cursor-pointer text-black-300 font-thin hover:text-green-600 hover:text-3xl hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">{lang === 'en' && 'CV'}{lang === 'sp' && 'Curriculum'}</Link>
+        <Link to="/TechStack" className="cursor-pointer text-black-300 font-thin hover:text-green-600 hover:text-3xl hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">{lang === 'en' && 'Tech Stack'}{lang === 'sp' && 'Tecnologias'}</Link>
+          <Link to="/Contact" className="cursor-pointer text-black-300 font-thin hover:text-green-600 hover:text-3xl hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">{lang === 'en' && 'Contact'}{lang === 'sp' && 'Contacto'}</Link>
         </div>
       <button
         className="block sm:hidden right-0 fixed p-2 mr-8 rounded border border-gray-300 bg-white shadow hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-blue-400"
@@ -46,7 +53,7 @@ const handleClick = () => {
         aria-modal="true"
       >
         <div className="flex items-center justify-end gap-2 p-4 border-b border-gray-100">
-          <span className="text-sm font-semibold mr-2">Close</span>
+          <span className="text-sm font-semibold mr-2">{lang === 'en' ? "Close" : "Cerrar"}</span>
           <button
             id="close-icon"
             className="p-2 rounded-full hover:bg-gray-200 focus:outline-none"
@@ -69,7 +76,7 @@ const handleClick = () => {
                 setOpen(false);
               }}
             >
-              Projects
+              {lang === 'en' && 'Projects'}{lang === 'sp' && 'Proyectos'}
             </button>
           </li>
           <li>
@@ -80,7 +87,7 @@ const handleClick = () => {
                 setOpen(false);
               }}
             >
-              About
+              {lang === 'en' && 'About'}{lang === 'sp' && 'Sobre Mi'}
             </button>
           </li>
           <li>
@@ -91,7 +98,7 @@ const handleClick = () => {
                 setOpen(false);
               }}
             >
-              CV
+            {lang === 'en' && 'CV'}{lang === 'sp' && 'Curriculum'}
             </button>
           </li>
            <li>
@@ -102,7 +109,7 @@ const handleClick = () => {
                 setOpen(false);
               }}
             >
-              Tech Stack
+            {lang === 'en' && 'Tech Stack'}{lang === 'sp' && 'Tecnologias'}
             </button>
           </li>
           <li>
@@ -113,7 +120,7 @@ const handleClick = () => {
                 setOpen(false);
               }}
             >
-              Contact
+              {lang === 'en' && 'Contact'}{lang === 'sp' && 'Contacto'}
             </button>
           </li>
         </ul>
