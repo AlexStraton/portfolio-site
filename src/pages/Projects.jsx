@@ -42,7 +42,7 @@ const translatedText = translations[lang] || translations.en;
    <div className="flex flex-col md:flex-row m-4 md:m-8">
     <img className="w-full object-contain mb-4 md:mb-0 md:mr-8 md:w-1/2 lg:w-1/3 max-w-full h-auto" src="/assets/TravelApp.png"/>
 <div className="flex items-end flex-col">
-<p className="text-sm md:text-lg lg:text-xl text-left">{translatedText.travelAppDescript}</p>
+<p className="text-sm md:text-lg lg:text-2xl text-left font-light">{translatedText.travelAppDescript}</p>
    <div className="flex gap-4 mt-4">
    <a target="_blank" rel="noopener"  className="cursor-pointer bg-orange-500 hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded shadow inline-block text-sm md:text-lg lg:text-xl" href="https://travel-app-vert-five.vercel.app/itinerary/13">{translatedText.hostedSite}</a>
    <a target="_blank" rel="noopener" className="cursor-pointer" href="https://github.com/AkivaKn/travel_app">
@@ -62,7 +62,7 @@ const translatedText = translations[lang] || translations.en;
    <div className="flex sm:flex-row flex-col items-center m-4 md:m-8">
     <img className="w-1/2 object-contain md:mb-0 md:mr-8 md:w-1/4 lg:w-1/3 max-w-full sm:h-64 md:h-1/2 lg:h-80 h-1/2" src="/assets/ShoppingCart.png"/>
 <div className="flex items-end flex-col">
-<p className="px-4 text-sm sm:text-xs md:text-lg lg:text-xl mt-4 text-left">{translatedText.shoppingCartDescript}</p>
+<p className="px-4 text-sm sm:text-xs md:text-lg lg:text-2xl mt-4 text-left font-light">{translatedText.shoppingCartDescript}</p>
    <div className="flex gap-4 mt-4">
    <a target="_blank" rel="noopener"  className="cursor-pointer bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded shadow inline-block text-sm md:text-lg lg:text-xl" href="https://www.youtube.com/watch?v=f2mnA_EE71k">{translatedText.videoDemo}</a>
    <a target="_blank" rel="noopener" className="cursor-pointer" href="https://github.com/AlexStraton/shopping_cart_app">
@@ -82,7 +82,7 @@ const translatedText = translations[lang] || translations.en;
    <div className="flex flex-col md:flex-row m-4 md:m-8">
     <img className="w-full object-contain mb-4 md:mb-0 md:mr-8 md:w-1/2 lg:w-1/3 max-w-full h-auto" src="/assets/GrandHotel.png"/>
 <div className="flex items-end flex-col">
-<p className="text-md md:text-lg lg:text-xl text-left">{translatedText.grandHotelDescript}</p>
+<p className="text-md md:text-lg lg:text-2xl text-left font-light">{translatedText.grandHotelDescript}</p>
    <div className="flex gap-4 mt-4">
    <a target="_blank" rel="noopener"  className="cursor-pointer bg-violet-500 hover:bg-violet-700 text-white font-semibold py-2 px-4 rounded shadow inline-block text-sm md:text-lg lg:text-xl" href="https://alexstraton.github.io/Hotel-webpage/">{translatedText.hostedSite}</a>
    <a target="_blank" rel="noopener" className="cursor-pointer" href="https://github.com/AlexStraton/Hotel-webpage">
@@ -101,7 +101,7 @@ const translatedText = translations[lang] || translations.en;
    <div className="flex flex-col md:flex-row m-4 md:m-8">
     <img className="w-full object-contain mb-4 md:mb-0 md:mr-8 md:w-1/2 lg:w-1/3 max-w-full h-auto" src="/assets/NCNews.png"/>
 <div className="flex items-end flex-col">
-<p className="text-md md:text-lg lg:text-xl text-left">{translatedText.newsAppDescript}</p>
+<p className="text-md md:text-lg lg:text-2xl text-left font-light">{translatedText.newsAppDescript}</p>
    <div className="flex gap-2 mt-4 items-center">
    <a target="_blank" rel="noopener"  className="cursor-pointer bg-red-500 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded shadow inline-block text-sm md:text-lg lg:text-xl" href="http://localhost:5173/Projects">{translatedText.hostedSite}
    </a>
@@ -126,7 +126,7 @@ const translatedText = translations[lang] || translations.en;
    <div className="flex sm:flex-row flex-col items-center m-4 md:m-8">
     <img className="w-1/2 object-contain md:mb-0 md:mr-8 md:w-1/4 lg:w-1/3 max-w-full sm:h-64 md:h-1/2 lg:h-80 h-1/2" src="/assets/SportMeets.png"/>
 <div className="flex items-end flex-col">
-   <p className="px-4 sm:text-xs md:text-lg lg:text-xl mt-4 text-left">{translatedText.sportMeetsDescript}</p>
+   <p className="px-4 sm:text-xs md:text-lg lg:text-2xl mt-4 text-left font-light">{translatedText.sportMeetsDescript}</p>
    <div className="flex gap-4 mt-4 items-center">
    <a target="_blank" rel="noopener"  className="cursor-pointer bg-gray-500 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded shadow inline-block text-sm md:text-lg lg:text-xl" href="https://www.linkedin.com/posts/alexandra-straton-2747a019b_group-project-as-our-final-project-activity-7229378065733177344-nJeV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC7sr3gB5fqXzoX-TSm_QIr-1k0iuLj44Y8">{translatedText.groupVideoPresentation}</a>
    <a target="_blank" rel="noopener" className="cursor-pointer" href="https://github.com/AFF4NN/FE-SportMeets">
@@ -154,7 +154,7 @@ const translatedText = translations[lang] || translations.en;
    <div className="flex flex-col md:flex-row m-4 md:m-8">
     <img className="w-full object-contain mb-4 md:mb-0 md:mr-8 md:w-1/2 lg:w-1/3 max-w-full h-auto" src="/assets/ReikiByAarti.png"/>
 <div className="flex items-end flex-col">
-<p className="text-md md:text-lg lg:text-xl text-left">{translatedText.reikiByAarti}</p>
+<p className="text-md md:text-lg lg:text-2xl text-left font-light">{translatedText.reikiByAarti}</p>
    <div className="flex gap-4 mt-4">
    <a target="_blank" rel="noopener"  className="cursor-pointer bg-pink-500 hover:bg-pink-700 text-white font-semibold py-2 px-4 rounded shadow inline-block text-sm md:text-lg lg:text-xl" href="https://reikibyaarti.netlify.app/">{translatedText.hostedSite}</a>
    <a target="_blank" rel="noopener" className="cursor-pointer" href="https://github.com/AlexStraton/Reiki_by_Aarti">
