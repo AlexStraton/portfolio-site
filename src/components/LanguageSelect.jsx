@@ -7,15 +7,15 @@ export default function LanguageSelect() {
 const options = [
   {
     value: 'en',
-    label: '🇬🇧ENG'
+    label: '🇬🇧 ENG'
   },
   {
     value: 'sp',
-    label: '🇪🇸ESP'
+    label: '🇪🇸 ESP'
   }
 ];
 const defaultValue = [options.find(opt => opt.value === lang) || options[0]];
-return <Select className='rounded-lg' options={options} onChange={(values) => {
+return <Select  options={options} onChange={(values) => {
   if (values && values[0]) setLang(values[0].value);
 }} values={defaultValue}/>;
 }

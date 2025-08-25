@@ -19,7 +19,7 @@ function App() {
     <LangThemeContext.Provider value={{ lang, setLang, theme, setTheme }}>
       <NavBar />
       <Routes>
-        <Route path='/' element={<Projects />} />
+        <Route path='/' element={<AboutMe />} />
         <Route path='/About' element={<AboutMe />} />
         <Route path='/Projects' element={<Projects />} />
         <Route path='/CV' element={<CV />} />

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom'
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
-import LightDarkToggle from "./LightDarkToggle";
+// import LightDarkToggle from "./LightDarkToggle";
 import LanguageSelect from "./LanguageSelect";
 import { LangThemeContext } from "../LangThemeContext";
 
@@ -10,6 +10,7 @@ export default function NavBar() {
   const [open, setOpen] = React.useState(false);
   const navigate = useNavigate()
   const { lang } = useContext(LangThemeContext);
+
 const handleClick = () => {
   navigate("/About")
 }
@@ -17,11 +18,15 @@ const handleClick = () => {
   return (
     <>
     <nav className="bg-gray-100 fixed w-full z-50 top-0 left-0 flex items-center justify-between">
+        <div className="flex items-center gap-4">
          <button>
          <img onClick={handleClick} className="ml-8 h-20 cursor-pointer" src="src/assets/AlexLightMode.png"></img>
          </button>
+         <div className="sm:ps-8 ">
         <LanguageSelect />
-         <LightDarkToggle />
+         </div>
+        </div>
+         {/* <LightDarkToggle /> */}
     <div className='right-0 hidden sm:flex'>
           <Link to="/About" className="cursor-pointer text-black-300 font-thin hover:text-green-600 hover:text-3xl  hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">{lang === 'en' && 'About'}{lang === 'sp' && 'Sobre Mi'}</Link>
           <Link to="/Projects" className="cursor-pointer text-black-300 font-thin hover:text-green-600 hover:text-3xl hover:border-b-2 hover:border-black transition-all duration-600 ease-in-out px-3 transition duration-600 ease-in-out text-lg sm:text-xl md:text-2xl lg:text-3xl font-medium">{lang === 'en' && 'Projects'}{lang === 'sp' && 'Proyectos'}</Link>
