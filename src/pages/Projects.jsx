@@ -36,13 +36,13 @@ const translatedText = translations[lang] || translations.en;
   return <>
   <section>
   <h1 className="mt-24 text-black text-6xl p-8 font-extralight">{lang === 'sp' && "Proyectos"}{lang === 'en' && "Projects"}</h1>
-  <div className="border-4 border-orange-300 mx-12 md:mx-24 lg:mx-32 my-4 md:my-8 lg:my-12 rounded-xl ">
+  <div className="border-4 border-orange-300 mx-8 md:mx-32 lg:mx-50 my-4 md:my-8 lg:my-12 rounded-xl ">
     <h1 className="text-orange-600 md:text-3xl lg:text-4xl text-2xl font-extralight p-2">Travel app</h1>
     <h2 className="text-orange-800 md:text-xl lg:text-2xl text-lg text-right m-4">NextJs | React | Vercel | PSQL | Tailwind | Auth.js</h2>
    <div className="flex flex-col md:flex-row m-4 md:m-8">
     <img className="w-full object-contain mb-4 md:mb-0 md:mr-8 md:w-1/2 lg:w-1/3 max-w-full h-auto" src="/assets/TravelApp.png"/>
 <div className="flex items-end flex-col">
-<p className="text-sm md:text-lg lg:text-xl">{translatedText.travelAppDescript}</p>
+<p className="text-sm md:text-lg lg:text-xl text-left">{translatedText.travelAppDescript}</p>
    <div className="flex gap-4 mt-4">
    <a target="_blank" rel="noopener"  className="cursor-pointer bg-orange-500 hover:bg-orange-700 text-white font-semibold py-2 px-4 rounded shadow inline-block text-sm md:text-lg lg:text-xl" href="https://travel-app-vert-five.vercel.app/itinerary/13">{translatedText.hostedSite}</a>
    <a target="_blank" rel="noopener" className="cursor-pointer" href="https://github.com/AkivaKn/travel_app">
@@ -56,13 +56,13 @@ const translatedText = translations[lang] || translations.en;
   </section>
 
  <section>
-  <div className="border-4 border-blue-300 mx-12 md:mx-24 lg:mx-32 my-4 md:my-8 lg:my-12 rounded-xl ">
+  <div className="border-4 border-blue-300 mx-8 md:mx-32 lg:mx-50 my-4 md:my-8 lg:my-12 rounded-xl ">
     <h1 className="text-blue-600 md:text-3xl lg:text-4xl text-2xl font-extralight p-2">Shopping Cart</h1>
     <h2 className="text-blue-800 md:text-xl lg:text-2xl text-lg text-right m-4">React Native | PSQL | Typescript</h2>
    <div className="flex sm:flex-row flex-col items-center m-4 md:m-8">
     <img className="w-1/2 object-contain md:mb-0 md:mr-8 md:w-1/4 lg:w-1/3 max-w-full sm:h-64 md:h-1/2 lg:h-80 h-1/2" src="/assets/ShoppingCart.png"/>
 <div className="flex items-end flex-col">
-<p className="px-4 text-sm sm:text-xs md:text-lg lg:text-xl mt-4">{translatedText.shoppingCartDescript}</p>
+<p className="px-4 text-sm sm:text-xs md:text-lg lg:text-xl mt-4 text-left">{translatedText.shoppingCartDescript}</p>
    <div className="flex gap-4 mt-4">
    <a target="_blank" rel="noopener"  className="cursor-pointer bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded shadow inline-block text-sm md:text-lg lg:text-xl" href="https://www.youtube.com/watch?v=f2mnA_EE71k">{translatedText.videoDemo}</a>
    <a target="_blank" rel="noopener" className="cursor-pointer" href="https://github.com/AlexStraton/shopping_cart_app">
@@ -76,13 +76,13 @@ const translatedText = translations[lang] || translations.en;
   </section>
 
    <section>
-  <div className="border-4 border-violet-300 mx-12 md:mx-24 lg:mx-32 my-4 md:my-8 lg:my-12 rounded-xl ">
+  <div className="border-4 border-violet-300 mx-8 md:mx-32 lg:mx-50 my-4 md:my-8 lg:my-12 rounded-xl ">
     <h1 className="text-purple-600 md:text-3xl lg:text-4xl text-2xl font-extralight p-2">Grand Hotel</h1>
     <h2 className="text-purple-800 md:text-xl lg:text-2xl text-lg text-right m-4">HTML | CSS | JavaScript</h2>
    <div className="flex flex-col md:flex-row m-4 md:m-8">
     <img className="w-full object-contain mb-4 md:mb-0 md:mr-8 md:w-1/2 lg:w-1/3 max-w-full h-auto" src="/assets/GrandHotel.png"/>
 <div className="flex items-end flex-col">
-<p className="text-md md:text-lg lg:text-xl">{translatedText.grandHotelDescript}</p>
+<p className="text-md md:text-lg lg:text-xl text-left">{translatedText.grandHotelDescript}</p>
    <div className="flex gap-4 mt-4">
    <a target="_blank" rel="noopener"  className="cursor-pointer bg-violet-500 hover:bg-violet-700 text-white font-semibold py-2 px-4 rounded shadow inline-block text-sm md:text-lg lg:text-xl" href="https://alexstraton.github.io/Hotel-webpage/">{translatedText.hostedSite}</a>
    <a target="_blank" rel="noopener" className="cursor-pointer" href="https://github.com/AlexStraton/Hotel-webpage">
@@ -95,13 +95,13 @@ const translatedText = translations[lang] || translations.en;
   </section>
 
    <section>
-  <div className="border-4 border-red-300 mx-12 md:mx-24 lg:mx-32 my-4 md:my-8 lg:my-12 rounded-xl ">
+  <div className="border-4 border-red-300 mx-8 md:mx-32 lg:mx-50 my-4 md:my-8 lg:my-12 rounded-xl ">
     <h1 className="text-red-600 md:text-3xl lg:text-4xl text-2xl font-extralight p-2">News app</h1>
     <h2 className="text-red-800 md:text-xl lg:text-2xl text-lg text-right m-4">JavaScript | React | PSQL | Bootstrap</h2>
    <div className="flex flex-col md:flex-row m-4 md:m-8">
     <img className="w-full object-contain mb-4 md:mb-0 md:mr-8 md:w-1/2 lg:w-1/3 max-w-full h-auto" src="/assets/NCNews.png"/>
 <div className="flex items-end flex-col">
-<p className="text-md md:text-lg lg:text-xl">{translatedText.newsAppDescript}</p>
+<p className="text-md md:text-lg lg:text-xl text-left">{translatedText.newsAppDescript}</p>
    <div className="flex gap-2 mt-4 items-center">
    <a target="_blank" rel="noopener"  className="cursor-pointer bg-red-500 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded shadow inline-block text-sm md:text-lg lg:text-xl" href="http://localhost:5173/Projects">{translatedText.hostedSite}
    </a>
@@ -120,13 +120,13 @@ const translatedText = translations[lang] || translations.en;
   </section>
 
   <section>
-  <div className="border-4 border-gray-400 mx-12 md:mx-24 lg:mx-32 my-4 md:my-8 lg:my-12 rounded-xl ">
+  <div className="border-4 border-gray-400 mx-8 md:mx-32 lg:mx-50 my-4 md:my-8 lg:my-12 rounded-xl ">
     <h1 className="text-gray-600 md:text-3xl lg:text-4xl text-2xl font-extralight p-2">Sport Meets</h1>
     <h2 className="text-gray-800 md:text-xl lg:text-2xl text-lg text-right m-4">React Native | PSQL | Flask | Socket.io | Python</h2>
    <div className="flex sm:flex-row flex-col items-center m-4 md:m-8">
     <img className="w-1/2 object-contain md:mb-0 md:mr-8 md:w-1/4 lg:w-1/3 max-w-full sm:h-64 md:h-1/2 lg:h-80 h-1/2" src="/assets/SportMeets.png"/>
 <div className="flex items-end flex-col">
-   <p className="px-4 sm:text-xs md:text-lg lg:text-xl mt-4 ">{translatedText.sportMeetsDescript}</p>
+   <p className="px-4 sm:text-xs md:text-lg lg:text-xl mt-4 text-left">{translatedText.sportMeetsDescript}</p>
    <div className="flex gap-4 mt-4 items-center">
    <a target="_blank" rel="noopener"  className="cursor-pointer bg-gray-500 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded shadow inline-block text-sm md:text-lg lg:text-xl" href="https://www.linkedin.com/posts/alexandra-straton-2747a019b_group-project-as-our-final-project-activity-7229378065733177344-nJeV?utm_source=share&utm_medium=member_desktop&rcm=ACoAAC7sr3gB5fqXzoX-TSm_QIr-1k0iuLj44Y8">{translatedText.groupVideoPresentation}</a>
    <a target="_blank" rel="noopener" className="cursor-pointer" href="https://github.com/AFF4NN/FE-SportMeets">
@@ -148,13 +148,13 @@ const translatedText = translations[lang] || translations.en;
   </section>
 
    <section>
-  <div className="border-4 border-pink-300 mx-12 md:mx-24 lg:mx-32 my-4 md:my-8 lg:my-12 rounded-xl ">
+  <div className="border-4 border-pink-300 mx-8 md:mx-32 lg:mx-50 my-4 md:my-8 lg:my-12 rounded-xl ">
     <h1 className="text-pink-600 md:text-3xl lg:text-4xl text-2xl font-extralight p-2">Reiki by Aarti</h1>
     <h2 className="text-pink-800 md:text-xl lg:text-2xl text-lg text-right m-4">HTML | Tailwind | TypeScript | Vite</h2>
    <div className="flex flex-col md:flex-row m-4 md:m-8">
     <img className="w-full object-contain mb-4 md:mb-0 md:mr-8 md:w-1/2 lg:w-1/3 max-w-full h-auto" src="/assets/ReikiByAarti.png"/>
 <div className="flex items-end flex-col">
-<p className="text-md md:text-lg lg:text-xl">{translatedText.reikiByAarti}</p>
+<p className="text-md md:text-lg lg:text-xl text-left">{translatedText.reikiByAarti}</p>
    <div className="flex gap-4 mt-4">
    <a target="_blank" rel="noopener"  className="cursor-pointer bg-pink-500 hover:bg-pink-700 text-white font-semibold py-2 px-4 rounded shadow inline-block text-sm md:text-lg lg:text-xl" href="https://reikibyaarti.netlify.app/">{translatedText.hostedSite}</a>
    <a target="_blank" rel="noopener" className="cursor-pointer" href="https://github.com/AlexStraton/Reiki_by_Aarti">
