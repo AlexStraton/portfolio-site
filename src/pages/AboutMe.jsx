@@ -42,7 +42,7 @@ export default function AboutMe() {
 <div className="flex flex-col lg:flex-row">
     <img className="rounded-xl h-auto w-2/3 sm:w-1/2 lg:w-1/4 md:ml-8 lg:ml-8 mx-auto" src="/assets/Me.png" alt="a girl wearing a red, long sleeved jumper and glasses facing sideways working on her laptop with a big screen behind her, both screens show colourful faded code">
     </img>
-    <p className="m-6 flex-col text-lg sm:text-md md:text-xl lg:text-2xl tracking-wider text-left leading-none">
+    <p className="m-6 flex-col text-lg sm:text-md md:text-xl lg:text-2xl tracking-wider text-left leading-none font-3333">
 {translatedText.about.map((paragraph) => <p>{paragraph}</p>)}
     </p>
 </div>
