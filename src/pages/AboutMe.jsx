@@ -40,10 +40,10 @@ export default function AboutMe() {
     </h1>
 <h2 className="mb-12 text-3xl font-extralight text-gray-900 md:text-4xl lg:text-5xl">{}</h2>
 
-<div className="flex flex-col md:flex-row">
-    <img className="rounded-xl h-auto w-2/3 sm:w-1/2 md:w-1/4 md:ml-8 lg:ml-8 mx-auto" src="/assets/Me.png" alt="a girl wearing a red, long sleeved jumper and glasses facing sideways working on her laptop with a big screen behind her, both screens show colourful faded code">
+<div className="flex flex-col lg:flex-row">
+    <img className="rounded-xl h-auto w-2/3 sm:w-1/2 lg:w-1/4 md:ml-8 lg:ml-8 mx-auto" src="/assets/Me.png" alt="a girl wearing a red, long sleeved jumper and glasses facing sideways working on her laptop with a big screen behind her, both screens show colourful faded code">
     </img>
-    <p className="m-8 flex-col  tracking-wider text-left leading-none">
+    <p className="m-6 flex-col text-xl tracking-wider text-left leading-none">
 {translatedText.about.map((paragraph) => <p>{paragraph}</p>)}
     </p>
 </div>
