@@ -3,30 +3,13 @@ import Footer from "../components/Footer";
 import { useContext } from "react";
 import { LangThemeContext } from "../LangThemeContext";
 
-
-const translations = {
-  en: {
-    title: "Junior Software Developer",
-    about: `A linguist with a background in primary education, I am now a junior full-stack developer specializing in Python, TypeScript, React, and PostgreSQL with a strong focus on problem solving and a flare for design and styling.
-
-I am currently in my first junior role developing and integrating the company's internal systems, as well as adding new features and working with UX/UI designers to implement user interface components and features that improve the user experience.`,
-  },
-  sp: {
-
-    title: "Desarrolladora de Software Junior",
-    about: `Lingüista con experiencia en educación primaria, ahora soy una desarrolladora full-stack junior especializada en Python, TypeScript, React y PostgreSQL, con un fuerte enfoque en la resolución de problemas y un toque para el diseño y el estilo.
-
-Actualmente estoy en mi primer puesto junior desarrollando e integrando los sistemas internos de la empresa, así como añadiendo nuevas funcionalidades y trabajando con diseñadores UX/UI para implementar componentes y características que mejoran la experiencia del usuario.`,
-  }
-};
-
 export default function CV() {
     const { lang } = useContext(LangThemeContext);
-    const translatedText = translations[lang] || translations.en;
+
 
   return <>
   <div className="mt-24 flex items-center justify-between w-full">
-  <h1 className=" text-black text-6xl mx-auto p-8 font-extralight">CV</h1>
+  <h1 className=" text-black text-6xl mx-auto p-8 font-extralight">{lang === 'en' ? "CV" : "Curriculum"}</h1>
 <a target="_blank" href="/AlexandraStratonCV.pdf" className="ml-4 text-4xl mr-8"><FaFileDownload /></a>
   </div>
 
@@ -37,12 +20,13 @@ export default function CV() {
   {lang === 'en' ? "Software Engineer - Curaleaf International" : "Ingeniera de Software - Curaleaf International"}
   </h1>
   <p className="m-4 text-xl font-medium">
-{lang === 'en' ? "  July 2024 - Current" : "Julio 2024 - Actualidad"}
+{lang === 'en' ? "July 2024 - Current" : "Julio 2024 - Actualidad"}
   </p>
   <div className="text-left font-light text-md md:text-lg lg:text-xl">
-<p>{lang === 'en' ? '- Full-stack software engineering role working with various tech stacks across multiple applications' : "Engenieria full stack"}</p>
-<p>{lang === 'en' ? '- Working with languages, frameworks and libraries include Typescript, React, Python, Quart , Javascript and Firebase' : 'Espanol'}</p>
-<p>{lang === 'en' ? "- Tasks include updating, maintaining and building of new features to both the staff-facing and patient-facing applications" : "Espanol"}</p>
+<p>{lang === 'en' ? '- Full-stack software engineering role working with Python, Quart, Typescript and MUI across multiple internal systems' : "- Desarrolladora de software Full-stack trabajando con Python, Quart, Typescript y MUI en diversos sistemas internos"}</p>
+<p>{lang === 'en' ? '- Integrated two core systems by developing an API and background worker, ensuring that all data is consistent with the primary source of truth' : '- Integración de dos sistemas principales mediante el desarrollo de una API y un Background Worker, garantizando que todos los datos sean consistentes con la fuente primaria de verdad'}</p>
+<p>{lang === 'en' ? "- Led fundamental structural changes in the pharmacy system to support sub-products, aligning its architecture conceptually with the changes I previously introduced in the formulary system" : "- Gestión de cambios estructurales fundamentales en el sistema de farmacia de la compañía, para soportar subproductos, alineando su arquitectura con los cambios que previamente introduje en el sistema de formularios"}</p>
+<p>{lang === 'en' ? "- I continuously implement new features, work closely with pharmacy stakeholders to gather requirements, and proactively fix bugs to ensure system reliability" : "- Implementación continua de nuevas funcionalidades, trabajo junto a los stakeholders del equipo de Farmacia para recopilar requisitos y solución proactiva de bugs para asegurar la fiabilidad del sistema"}</p>
   </div>
     </section>
 
@@ -54,10 +38,10 @@ export default function CV() {
 {lang === 'en' ? "April 2024 - July 2024" : "Abril 2024 - Julio 2024"}
   </p>
   <div className="text-left font-light text-md md:text-lg lg:text-xl">
-<p>{lang === 'en' ? "- Accredited Software Development Bootcamp teaching  React, JavaScript fundamentals, PSQL and Express.js" : "Espanol"}</p>
-<p>{lang === 'en' ? "- Accredited Software Development Bootcamp teaching  React, JavaScript fundamentals, PSQL and Express.js- Designed and programmed two solo full-stack JS/React project, and a group full-stack Python & React Native project" : "Espanol"}</p>
-<p>{lang === 'en' ? "-  Experience working with RESTful APIs" : "Espanol"}</p>
-<p>{lang === 'en' ? "- Worked using TDD first practices" : "Espanol"}</p>
+<p>{lang === 'en' ? "- Accredited Software Development Bootcamp teaching  React, JavaScript fundamentals, PSQL and Express.js" : "- Bootcamp acreditado de Desarrollo de Software con React, fundamentos de JavaScript, PSQL y Express.js"}</p>
+<p>{lang === 'en' ? "- Designed and programmed two solo full-stack JS/React project, and a group full-stack Python & React Native project" : "- Diseño y programación de dos proyectos individuales Full-stack JS/React, y un proyecto grupal Full-stack Python y React Native"}</p>
+<p>{lang === 'en' ? "-  Experience working with RESTful APIs" : "- Experiencia trabajando con RESTful APIs"}</p>
+<p>{lang === 'en' ? "- Worked using TDD practices" : "- Trabajo siguiendo prácticas de TDD"}</p>
   </div>
     </section>
 </div>
@@ -66,9 +50,9 @@ export default function CV() {
  <div className="bg-gray-200 border-2 border-purple-400 rounded-xl p-2 flex-1">
       <h2 className="font-semibold text-2xl mb-4">{lang === 'en' ? "Certificates" : "Certificaciones"}</h2>
   <div className="flex flex-col space-y-2 overflow-auto p-2">
-  <img alt="Northcoders bootcamp certificate" className="w-full max-w-[200px] self-center object-contain h-auto" src="src/assets/NC-Alex-Straton-certificate-1.png"/>
-   <img alt= "FreeCodeCamp Responsive Web Design certificate" className="w-full max-w-[200px] self-center object-contain h-auto" src="src/assets/FreeCodeCamp.png"/>
-     <img alt="Udemy Complete javaScript Certificate" className="w-full max-w-[200px] self-center object-contain h-auto" src="src/assets/JavascriptCert.jpg"/>
+  <img alt="Northcoders bootcamp certificate" className="w-full max-w-[200px] self-center object-contain h-auto" src="/assets/NC-Alex-Straton-certificate-1.png"/>
+   <img alt= "FreeCodeCamp Responsive Web Design certificate" className="w-full max-w-[200px] self-center object-contain h-auto" src="/assets/FreeCodeCamp.png"/>
+     <img alt="Udemy Complete javaScript Certificate" className="w-full max-w-[200px] self-center object-contain h-auto" src="/assets/JavascriptCert.jpg"/>
  </div>
   </div>
       </aside>
@@ -92,17 +76,13 @@ export default function CV() {
   <div className="p-8 text-2xl flex flex-col bg-gray-200 border-2 border-cyan-400 m-2 md:m-4 lg:m-8 rounded-xl ">
     {lang === 'en' ? "Education" : "Educacion"}
     <span className="m-4 font-light text-base text-md md:text-lg lg:text-xl">
-   {lang === 'en' ? "Postgraduate Cert. in Education(PGCE) with Qualified Teacher Status (QTS) 2014-2015" : "Educacion Postgrado (PGCE) con Titulo de Profesora Certificada (QTS) 2014-2015"}
+   {lang === 'en' ? "Postgraduate Cert. in Education(PGCE) with Qualified Teacher Status (QTS) University of Sussex 2014-2015" : "Educacion Postgrado (PGCE) con Titulo de Profesora Certificada (QTS) Universidad de Sussex 2014-2015"}
   </span>
 <span className="m-4 font-light text-base text-md md:text-lg lg:text-xl">
   {lang === 'en' ? "Modern Languages (French, Spanish and Italian) University of Hull (2005-2009)" : "Lenguas Modernas (Frances, Castellano e Italiano) Universidad de Hull (2005-2009)"}
   </span>
-
-
   </div>
-
 </aside>
-
       </div>
       <Footer/>
   </>

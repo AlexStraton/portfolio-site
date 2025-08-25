@@ -15,11 +15,15 @@ const translations = {
 "In my current role, I help develop and integrate internal systems, add new features, and collaborate with UX/UI designers to create user interface components that enhance user experience and drive innovation in the pharmaceutical industry."]
   },
   sp: {
-
     title: "Desarrolladora de Software Junior",
-    about: ["Lingüista con experiencia en educación primaria, ahora soy una desarrolladora full-stack junior especializada en Python, TypeScript, React y PostgreSQL, con un fuerte enfoque en la resolución de problemas y un toque para el diseño y el estilo.",
+    about: ["Soy una Full-Stack Junior Developer con un año de experiencia en empresa final, especializada en Python, TypeScript, React y PostgreSQL.",
 <br />,
-"Actualmente estoy en mi primer puesto junior desarrollando e integrando los sistemas internos de la empresa, así como añadiendo nuevas funcionalidades y trabajando con diseñadores UX/UI para implementar componentes y características que mejoran la experiencia del usuario."],
+"Como ex lingüista y traductora con experiencia también como profesora en educación primaria, mi experiencia en IT ha sido impulsada por mis habilidades de comunicación, trabajo en equipo, empatía y creatividad; habilidades que actualmente traslado a cada uno de mis proyectos.",
+<br />,
+"Soy una apasionada de la resolución de problemas y tengo una gran intuición para el diseño y el 'styling'.",
+<br />,
+"En mi rol actual, trabajo desarrollando e integrando sistemas internos, añadiendo nuevas funcionalidades, y colaborando con los diseñadores UX/UI para crear componentes de interfaces de usuario que mejoran la experiencia del mismo y colaboran al desarrollo y a la innovación en la industria farmacéutica."
+],
   }
 };
 export default function AboutMe() {
@@ -37,7 +41,7 @@ export default function AboutMe() {
 <h2 className="mb-12 text-3xl font-extralight text-gray-900 md:text-4xl lg:text-5xl">{}</h2>
 
 <div className="flex flex-col md:flex-row">
-    <img className="rounded-xl h-auto w-2/3 sm:w-1/2 md:w-1/4 md:ml-8 lg:ml-8 mx-auto" src="src/assets/Me.png" alt="a girl wearing a red, long sleeved jumper and glasses facing sideways working on her laptop with a big screen behind her, both screens show colourful faded code">
+    <img className="rounded-xl h-auto w-2/3 sm:w-1/2 md:w-1/4 md:ml-8 lg:ml-8 mx-auto" src="/assets/Me.png" alt="a girl wearing a red, long sleeved jumper and glasses facing sideways working on her laptop with a big screen behind her, both screens show colourful faded code">
     </img>
     <p className="m-8 flex-col  tracking-wider text-left leading-none">
 {translatedText.about.map((paragraph) => <p>{paragraph}</p>)}

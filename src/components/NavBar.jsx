@@ -20,7 +20,7 @@ const handleClick = () => {
     <nav className="bg-gray-100 fixed w-full z-50 top-0 left-0 flex items-center justify-between">
         <div className="flex items-center gap-4">
          <button>
-         <img onClick={handleClick} className="ml-8 h-20 cursor-pointer" src="src/assets/AlexLightMode.png"></img>
+         <img onClick={handleClick} className="ml-8 h-20 cursor-pointer" src="/assets/AlexLightMode.png"></img>
          </button>
          <div className="sm:ps-8 ">
         <LanguageSelect />

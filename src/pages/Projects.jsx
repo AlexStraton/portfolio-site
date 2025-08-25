@@ -18,12 +18,12 @@ const translations = {
   },
   sp: {
     hostedSite: "Sitio Web Alojado",
-    travelAppDescript: "Descripcion en español de la app de viajes",
-      shoppingCartDescript: "Descripción en español del carrito de compras",
-      grandHotelDescript: "Descripción en español del gran hotel",
-      newsAppDescript: "Descripción en español de la aplicación de noticias",
-      sportMeetsDescript: "Descripción en español de encuentros deportivos",
-      reikiByAarti: "Descripción en español de Reiki por Aarti",
+    travelAppDescript: "Una aplicación de viajes que permite a los usuarios buscar itinerarios y viajes preplaneados en base a sus preferencias. La aplicación ayuda a los usuarios a crear una cuenta y loguearse en ella para seleccionar destinos, filtrar por actividades o puntos de interés, postear sus itinerarios de viaje, dejar 'Likes' y comentarios en los posts, etc. Este proyecto fue creado tras haber cursado mi Bootcamp, junto a un equipo de 4 personas, con uso de metodologías ágiles (Agile) y despliegue en Vercel.",
+      shoppingCartDescript: "Aplicación móvil que replica la funcionalidad de una tienda online, y que permite a los usuarios añadir productos a un carro de compra, ver el carro y actualizar la cantidad de ítems a comprar, así como añadir nuevos productos para vender en el sitio web. Los usuarios también pueden hacer el 'checkout' y confirmar los productos que desean comprar. Este proyecto fue creado tras haber cursado mi Bootcamp y mediante 'pair-programming' en menos de un mes.",
+      grandHotelDescript: "Esta simple landing page es el resultado de un curso de CSS que realicé en Udemy, el cual estaba focalizado en aprender Flexbox para el styling. La página es 100% 'responsive', e incluye una barra de navegación, una galería de imágenes y una sección de testimonios. Me enfoqué puramente en el styling usando Vanilla CSS y HTML. El proyecto fue completado en menos de una semana.",
+      newsAppDescript: "Este es un proyecto de portfolio desarrollado como parte de mi formación en Northcoders. Incluye un Frontend en React y una API Backend alojada en Supabase. El Frontend fue completado en 5 días y el Backend en 4. La aplicación permite a los usuarios visualizar, postear, comentar y votar artículos.",
+      sportMeetsDescript: "Sport Meets es una aplicación móvil (completada en 10 días) que fue el proyecto final de mi Bootcamp en Northcoders. La aplicación permite a los usuarios registrarse y loguearse, buscar eventos por categoría o ubicación, unirse a eventos, e interactuar mediante mensajes en relación a los eventos deportivos que pueden encontrar en la app. Tiene un chat integrado, usando Socket.io, para comunicación en tiempo real, y tiene implementada seguridad en la autenticación de usuario para proteger las cuentas de los usuarios. El proyecto fue desarrollado junto a un equipo de 5 personas, usando metodologías ágiles.",
+      reikiByAarti: "Una simple Landing Page para una terapeuta especialista en Reiki, completado en una semana. El sitio web es 100% responsive, e incluye un Calendly construido en base a las necesidades de la terapeuta para que sus clientes puedan agendar sus sesiones. Ella especificó la gama de colores deseada, el contenido y su disposición en la página. En el futuro añadiremos más pestañas y funcionalidades en base a los deseos de la terapeuta.",
       videoDemo: "Video Demostrativo",
       groupVideoPresentation: "Presentación en video grupal"
    }
@@ -40,7 +40,7 @@ const translatedText = translations[lang] || translations.en;
     <h1 className="text-orange-600 md:text-3xl lg:text-4xl text-2xl font-extralight p-2">Travel app</h1>
     <h2 className="text-orange-800 md:text-xl lg:text-2xl text-lg text-right m-4">NextJs | React | Vercel | PSQL | Tailwind | Auth.js</h2>
    <div className="flex flex-col md:flex-row m-4 md:m-8">
-    <img className="w-full object-contain mb-4 md:mb-0 md:mr-8 md:w-1/2 max-w-full h-auto" src="src/assets/TravelApp.png"/>
+    <img className="w-full object-contain mb-4 md:mb-0 md:mr-8 md:w-1/2 max-w-full h-auto" src="/assets/TravelApp.png"/>
 <div className="flex items-end flex-col">
 <p className="text-sm md:text-lg lg:text-xl">{translatedText.travelAppDescript}</p>
    <div className="flex gap-4 mt-4">
@@ -60,7 +60,7 @@ const translatedText = translations[lang] || translations.en;
     <h1 className="text-blue-600 md:text-3xl lg:text-4xl text-2xl font-extralight p-2">Shopping Cart</h1>
     <h2 className="text-blue-800 md:text-xl lg:text-2xl text-lg text-right m-4">React Native | PSQL | Typescript</h2>
    <div className="flex sm:flex-row flex-col items-center m-4 md:m-8">
-    <img className="w-1/2 object-contain md:mb-0 md:mr-8 md:w-1/4 max-w-full sm:h-64 md:h-1/2 h-1/2" src="src/assets/ShoppingCart.png"/>
+    <img className="w-1/2 object-contain md:mb-0 md:mr-8 md:w-1/4 max-w-full sm:h-64 md:h-1/2 h-1/2" src="/assets/ShoppingCart.png"/>
 <div className="flex items-end flex-col">
 <p className="px-4 text-sm sm:text-xs md:text-lg lg:text-xl mt-4">{translatedText.shoppingCartDescript}</p>
    <div className="flex gap-4 mt-4">
@@ -80,7 +80,7 @@ const translatedText = translations[lang] || translations.en;
     <h1 className="text-purple-600 md:text-3xl lg:text-4xl text-2xl font-extralight p-2">Grand Hotel</h1>
     <h2 className="text-purple-800 md:text-xl lg:text-2xl text-lg text-right m-4">HTML | CSS | JavaScript</h2>
    <div className="flex flex-col md:flex-row m-4 md:m-8">
-    <img className="w-full object-contain mb-4 md:mb-0 md:mr-8 md:w-1/2 max-w-full h-auto" src="src/assets/GrandHotel.png"/>
+    <img className="w-full object-contain mb-4 md:mb-0 md:mr-8 md:w-1/2 max-w-full h-auto" src="/assets/GrandHotel.png"/>
 <div className="flex items-end flex-col">
 <p className="text-md md:text-lg lg:text-xl">{translatedText.grandHotelDescript}</p>
    <div className="flex gap-4 mt-4">
@@ -99,7 +99,7 @@ const translatedText = translations[lang] || translations.en;
     <h1 className="text-red-600 md:text-3xl lg:text-4xl text-2xl font-extralight p-2">News app</h1>
     <h2 className="text-red-800 md:text-xl lg:text-2xl text-lg text-right m-4">JavaScript | React | PSQL | Bootstrap</h2>
    <div className="flex flex-col md:flex-row m-4 md:m-8">
-    <img className="w-full object-contain mb-4 md:mb-0 md:mr-8 md:w-1/2 max-w-full h-auto" src="src/assets/NCNews.png"/>
+    <img className="w-full object-contain mb-4 md:mb-0 md:mr-8 md:w-1/2 max-w-full h-auto" src="/assets/NCNews.png"/>
 <div className="flex items-end flex-col">
 <p className="text-md md:text-lg lg:text-xl">{translatedText.newsAppDescript}</p>
    <div className="flex gap-2 mt-4 items-center">
@@ -124,7 +124,7 @@ const translatedText = translations[lang] || translations.en;
     <h1 className="text-gray-600 md:text-3xl lg:text-4xl text-2xl font-extralight p-2">Sport Meets</h1>
     <h2 className="text-gray-800 md:text-xl lg:text-2xl text-lg text-right m-4">React Native | PSQL | Flask | Socket.io | Python</h2>
    <div className="flex sm:flex-row flex-col items-center m-4 md:m-8">
-    <img className="w-1/2 object-contain md:mb-0 md:mr-8 md:w-1/4 max-w-full sm:h-64 md:h-1/2 h-1/2" src="src/assets/SportMeets.png"/>
+    <img className="w-1/2 object-contain md:mb-0 md:mr-8 md:w-1/4 max-w-full sm:h-64 md:h-1/2 h-1/2" src="/assets/SportMeets.png"/>
 <div className="flex items-end flex-col">
    <p className="text-md md:text-lg lg:text-xl">{translatedText.sportMeetsDescript}</p>
    <div className="flex gap-4 mt-4 items-center">
@@ -152,7 +152,7 @@ const translatedText = translations[lang] || translations.en;
     <h1 className="text-pink-600 md:text-3xl lg:text-4xl text-2xl font-extralight p-2">Reiki by Aarti</h1>
     <h2 className="text-pink-800 md:text-xl lg:text-2xl text-lg text-right m-4">HTML | Tailwind | TypeScript | Vite</h2>
    <div className="flex flex-col md:flex-row m-4 md:m-8">
-    <img className="w-full object-contain mb-4 md:mb-0 md:mr-8 md:w-1/2 max-w-full h-auto" src="src/assets/ReikiByAarti.png"/>
+    <img className="w-full object-contain mb-4 md:mb-0 md:mr-8 md:w-1/2 max-w-full h-auto" src="/assets/ReikiByAarti.png"/>
 <div className="flex items-end flex-col">
 <p className="text-md md:text-lg lg:text-xl">{translatedText.reikiByAarti}</p>
    <div className="flex gap-4 mt-4">
