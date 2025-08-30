@@ -38,7 +38,7 @@ const translatedText = translations[lang] || translations.en;
   <h1 className="mt-24 text-black text-6xl p-8 font-extralight">{lang === 'sp' && "Proyectos"}{lang === 'en' && "Projects"}</h1>
   <div className="border-4 border-orange-300 mx-8 md:mx-32 lg:mx-50 my-4 md:my-8 lg:my-12 rounded-xl ">
     <h1 className="text-orange-600 md:text-3xl lg:text-4xl text-2xl font-extralight p-2">Travel app</h1>
-    <h2 className="text-orange-800 md:text-xl lg:text-2xl text-lg text-right m-4">NextJs | React | Vercel | PSQL | Tailwind | Auth.js</h2>
+    <h2 className="text-orange-800 md:text-xl lg:text-2xl text-lg text-right m-4">Next.js | React | Vercel | PSQL | Tailwind | Auth.js</h2>
    <div className="flex flex-col md:flex-row m-4 md:m-8">
     <img className="w-full object-contain mb-4 md:mb-0 md:mr-8 md:w-1/2 lg:w-1/3 max-w-full h-auto" src="/assets/TravelApp.png"/>
 <div className="flex items-end flex-col">
@@ -103,7 +103,7 @@ const translatedText = translations[lang] || translations.en;
 <div className="flex items-end flex-col">
 <p className="text-md md:text-lg lg:text-2xl text-left font-light">{translatedText.newsAppDescript}</p>
    <div className="flex gap-2 mt-4 items-center">
-   <a target="_blank" rel="noopener"  className="cursor-pointer bg-red-500 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded shadow inline-block text-sm md:text-lg lg:text-xl" href="http://localhost:5173/Projects">{translatedText.hostedSite}
+   <a target="_blank" rel="noopener"  className="cursor-pointer bg-red-500 hover:bg-red-700 text-white font-semibold py-2 px-4 rounded shadow inline-block text-sm md:text-lg lg:text-xl" href="https://nc-news-alex.netlify.app/">{translatedText.hostedSite}
    </a>
    <a target="_blank" rel="noopener" className="cursor-pointer" href="https://github.com/AlexStraton/NC-news-front-end">
    <span className="text-3xl"><FaGithub  /></span>

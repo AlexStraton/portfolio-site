@@ -8,7 +8,7 @@ const translations = {
     title: "Junior Software Developer",
     about: ["I am a Junior full-stack developer with one year of experience in a product company specializing in Python, TypeScript, React, and PostgreSQL.",
 <br />,
-   " As a former linguist with a background in primary education, my journey into tech has been fueled by excellent communication, teamwork, empathy, and creativity—skills I bring to every project.",
+   " As a former linguist with a background in primary education, my journey into tech has been fueled by excellent communication, teamwork, empathy, and creativity; skills I bring to every project.",
 <br />,
       " I am passionate about problem solving and have a strong flair for design and styling.",
 <br />,
