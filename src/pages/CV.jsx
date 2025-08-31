@@ -10,7 +10,8 @@ export default function CV() {
   return <>
   <div className="mt-24 flex items-center justify-between w-full">
   <h1 className=" text-black text-6xl mx-auto p-8 font-extralight">{lang === 'en' ? "CV" : "Curriculum"}</h1>
-<a target="_blank" href="/AlexandraStratonCV.pdf" className="ml-4 text-4xl mr-8"><FaFileDownload /></a>
+  {lang === 'en' ? <a target="_blank" href="/AlexandraStratonCV.pdf" className="ml-4 text-4xl mr-8"><FaFileDownload /></a> : <a target="_blank" href="/ESPAlexStratonCurriculum.pdf" className="ml-4 text-4xl mr-8"><FaFileDownload /></a>}
+
   </div>
 
   <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
